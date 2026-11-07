@@ -76,6 +76,10 @@ The results below describe the current source code and calculations from its con
 
 ### Video
 
+
+https://github.com/user-attachments/assets/58e0e35d-bea7-45ff-9c10-347f391b486e
+
+
 **Sensor sampling and control timing**
 
 `Timer_A1_Periodic_Task()` runs nominally every 1 ms. At tick 10, `Reflectance_Sensor_Start()` enables the IR emitters, drives all eight sensor outputs high for 10 µs, and changes them back to inputs. At tick 11, `Reflectance_Sensor_End()` reads Port 7 and disables the emitters. A high bit represents black tape; a low bit represents white background.
